@@ -1,0 +1,390 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Thread & Co. — Modern everyday clothing</title>
+<meta name="description" content="Thoughtfully made clothing for everyday life. Shop tees, hoodies, outerwear, dresses and more.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Inter:wght@400;500;600&family=Caveat:wght@600&display=swap" rel="stylesheet">
+<meta property="og:title" content="Thread & Co. — Modern everyday clothing">
+<meta property="og:description" content="Soft fabrics, honest prices, free returns. Shop the Winter collection.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="img/set-yellow.jpg">
+<meta name="theme-color" content="#faf8f5">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%231c1b19'/%3E%3Ctext x='32' y='44' font-size='34' text-anchor='middle' fill='%23fff' font-family='Georgia' font-weight='700'%3ET%3C/text%3E%3C/svg%3E">
+<script>try{var t=localStorage.getItem('tc_theme');if(t)document.documentElement.dataset.theme=t;}catch(e){}</script>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="loader" id="loader" aria-hidden="true">
+  <div class="curtain l"></div><div class="curtain r"></div>
+  <div class="load-mid">
+    <div class="load-logo">Thread<span>&amp;</span>Co.</div>
+    <svg class="stitch" viewBox="0 0 300 20" aria-hidden="true"><path d="M2 10 H298" /></svg>
+    <p>Threading the needle…</p>
+  </div>
+</div>
+<div class="progress" id="progress" aria-hidden="true"></div>
+<div class="promo">Free shipping over $75 · Free 30-day returns</div>
+
+<header class="header">
+  <div class="wrap header-row">
+    <button class="icon-btn menu-btn" id="menuToggle" aria-label="Open menu" aria-expanded="false" aria-controls="mainNav">
+      <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+    </button>
+    <a href="#top" class="logo" aria-label="Thread & Co. home">Thread<span>&amp;</span>Co.</a>
+    <nav class="nav" id="mainNav" aria-label="Main">
+      <a href="#shop" data-cat="all">Shop all</a>
+      <a href="#shop" data-cat="Tops">Tops</a>
+      <a href="#shop" data-cat="Outerwear">Outerwear</a>
+      <a href="#shop" data-cat="Bottoms">Bottoms</a>
+      <a href="#sale">Sale</a>
+      <a href="#about">Our story</a>
+    </nav>
+    <div class="header-actions">
+      <button class="icon-btn" id="themeToggle" aria-label="Toggle dark mode">
+        <svg viewBox="0 0 24 24" width="21" height="21" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20 14.5A8 8 0 0 1 9.5 4a8 8 0 1 0 10.5 10.5z"/></svg>
+      </button>
+      <button class="icon-btn" id="searchToggle" aria-label="Search">
+        <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+      </button>
+      <button class="icon-btn" id="wishToggle" aria-label="Wishlist">
+        <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"><path d="M12 20s-7-4.5-7-10a4 4 0 0 1 7-2.6A4 4 0 0 1 19 10c0 5.5-7 10-7 10z"/></svg>
+        <span class="badge" id="wishCount" hidden>0</span>
+      </button>
+      <button class="icon-btn" id="cartToggle" aria-label="Open cart">
+        <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" stroke-linecap="round"><path d="M5 8h14l-1 12H6L5 8z"/><path d="M9 8V6a3 3 0 0 1 6 0v2"/></svg>
+        <span class="badge" id="cartCount" hidden>0</span>
+      </button>
+    </div>
+  </div>
+  <div class="searchbar" id="searchbar" hidden>
+    <div class="wrap">
+      <input type="search" id="searchInput" placeholder="Search tees, hoodies, dresses…" aria-label="Search products">
+    </div>
+  </div>
+</header>
+
+<main id="top">
+  <section class="hero">
+    <div class="wrap hero-grid">
+      <div class="hero-copy">
+        <p class="eyebrow">Autumn / Winter 2026</p>
+        <h1>Clothes made to be <span class="scrib">worn on repeat.<svg viewBox="0 0 320 18" preserveAspectRatio="none" aria-hidden="true"><path d="M3 11 C40 2, 70 17, 110 9 S180 3, 215 11 S290 15, 317 6"/></svg></span></h1>
+        <p class="lead">Soft fabrics, honest prices and cuts that work with everything already in your wardrobe.</p>
+        <div class="hero-cta">
+          <a href="#shop" class="btn btn-primary">Shop the collection</a>
+          <a href="#featured" class="btn btn-ghost">Bestsellers</a>
+        </div>
+        <ul class="hero-stats">
+          <li><strong>4.8★</strong><span>12,000+ reviews</span></li>
+          <li><strong>100%</strong><span>organic cotton basics</span></li>
+          <li><strong>30 days</strong><span>free returns</span></li>
+        </ul>
+      </div>
+      <div class="hero-art" id="heroArt">
+        <a class="pin p1" href="#shop" data-open="13"><span class="tape"></span><img src="img/set-yellow.jpg" alt="Model in a yellow fleece set" fetchpriority="high"><span class="tag-hang"><i></i><b>Sunshine Fleece Set</b><em>$96</em></span></a>
+        <a class="pin p2" href="#shop" data-open="9"><span class="tape"></span><img src="img/coat-blue.jpg" alt="Model in a long blue wool coat"><span class="tag-hang"><i></i><b>Wool Overcoat</b><em>$238</em></span></a>
+        <a class="pin p3" href="#shop" data-open="15"><span class="tape"></span><img src="img/dress-red.jpg" alt="Model in a red embroidered dress"><span class="tag-hang"><i></i><b>Belted Dress</b><em>$128</em></span></a>
+        <p class="note">new in! <svg viewBox="0 0 60 40" aria-hidden="true"><path d="M3 6 C20 4, 40 14, 52 34 M52 34 L42 30 M52 34 L54 22"/></svg></p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section wrap rail-sec" aria-label="Shop by collection">
+    <div class="section-head"><h2>Off the rail</h2><p>Pick a hanger to start browsing.</p></div>
+    <div class="rail">
+      <button class="hang" data-cat="Tops"><svg class="hanger" viewBox="0 0 80 46" aria-hidden="true"><path d="M40 4 a6 6 0 1 1 6 6 v6 L76 38 q4 4 -2 6 H6 q-6 -2 -2 -6 L34 16"/></svg><span class="hang-card"><img src="img/tees-green-rack.jpg" alt="" loading="lazy"><b>Tops</b><small>Tees, knits &amp; sweats</small></span></button>
+      <button class="hang" data-cat="Outerwear"><svg class="hanger" viewBox="0 0 80 46" aria-hidden="true"><path d="M40 4 a6 6 0 1 1 6 6 v6 L76 38 q4 4 -2 6 H6 q-6 -2 -2 -6 L34 16"/></svg><span class="hang-card"><img src="img/coat-plaid.jpg" alt="" loading="lazy"><b>Outerwear</b><small>Coats &amp; jackets</small></span></button>
+      <button class="hang" data-cat="Bottoms"><svg class="hanger" viewBox="0 0 80 46" aria-hidden="true"><path d="M40 4 a6 6 0 1 1 6 6 v6 L76 38 q4 4 -2 6 H6 q-6 -2 -2 -6 L34 16"/></svg><span class="hang-card"><img src="img/trousers-stripe.jpg" alt="" loading="lazy"><b>Bottoms</b><small>Denim &amp; trousers</small></span></button>
+      <button class="hang" data-cat="Dresses"><svg class="hanger" viewBox="0 0 80 46" aria-hidden="true"><path d="M40 4 a6 6 0 1 1 6 6 v6 L76 38 q4 4 -2 6 H6 q-6 -2 -2 -6 L34 16"/></svg><span class="hang-card"><img src="img/dress-floral.jpg" alt="" loading="lazy"><b>Dresses</b><small>Day to night</small></span></button>
+    </div>
+  </section>
+
+  <div class="bunting" aria-hidden="true">
+    <span style="--c:#c4552d">Soft</span><span style="--c:#1f2530">Honest</span><span style="--c:#d9c7a3;--t:#1c1b19">Everyday</span><span style="--c:#8da285">Organic</span><span style="--c:#c4552d">Repeat</span><span style="--c:#1f2530">Easy</span><span style="--c:#d9c7a3;--t:#1c1b19">Fair</span><span style="--c:#8da285">Kind</span><span style="--c:#c4552d">Soft</span><span style="--c:#1f2530">Honest</span><span style="--c:#d9c7a3;--t:#1c1b19">Everyday</span><span style="--c:#8da285">Organic</span>
+  </div>
+
+  <section class="section wrap promise">
+    <div class="promise-copy reveal">
+      <p class="eyebrow">Our promise</p>
+      <h2>Made to be worn on repeat.</h2>
+      <p>We make clothes for real days. Soft fabrics, honest prices and cuts that work with everything you already own — no trend chasing, nothing you’ll wear once.</p>
+    </div>
+    <div class="care-label fadein" aria-label="Product care label">
+      <p class="cl-brand">Thread&amp;Co.</p>
+      <ul>
+        <li><b>Fabric</b><span>100% organic cotton</span></li>
+        <li><b>Wash</b><span>Machine wash 30°</span></li>
+        <li><b>Wear</b><span>On repeat</span></li>
+        <li><b>Returns</b><span>Free within 30 days</span></li>
+        <li><b>Made</b><span>Fair-wage partner factories</span></li>
+      </ul>
+      <p class="cl-foot">Style no. TC-2026 · Size M</p>
+    </div>
+  </section>
+
+<section class="section wrap" id="featured">
+    <div class="section-head">
+      <h2>Bestsellers</h2>
+      <p>The pieces our customers keep coming back for.</p>
+    </div>
+    <div class="grid" id="featuredGrid"></div>
+  </section>
+
+  <section class="sale wrap" id="sale">
+    <div class="sale-img"><img src="img/coat-blue.jpg" alt="" loading="lazy"></div>
+    <div class="sale-copy">
+      <p class="eyebrow">Winter sale</p>
+      <h2>Up to 20% off outerwear &amp; knits</h2>
+      <p>Use code <b class="code" id="saleCode">WELCOME10</b> at checkout for an extra 10% off. Ends soon.</p>
+      <div class="countdown" id="countdown" aria-live="off">
+        <div><b id="cdD">00</b><span>days</span></div><div><b id="cdH">00</b><span>hrs</span></div><div><b id="cdM">00</b><span>min</span></div><div><b id="cdS">00</b><span>sec</span></div>
+      </div>
+      <button class="btn btn-primary" id="saleBtn">Shop the sale</button>
+    </div>
+  </section>
+
+  <section class="section wrap" id="shop">
+    <div class="section-head">
+      <h2>Shop all</h2>
+      <p id="resultCount"></p>
+    </div>
+    <div class="toolbar">
+      <div class="chips" id="chips" role="tablist" aria-label="Filter by category"></div>
+      <label class="sort">
+        <span>Sort</span>
+        <select id="sort">
+          <option value="featured">Featured</option>
+          <option value="low">Price: low to high</option>
+          <option value="high">Price: high to low</option>
+          <option value="rating">Top rated</option>
+        </select>
+      </label>
+    </div>
+    <div class="filters">
+      <label class="range">Max price: <b id="priceVal">$250</b>
+        <input type="range" id="priceRange" min="30" max="250" step="10" value="250" aria-label="Maximum price">
+      </label>
+      <label class="check"><input type="checkbox" id="saleOnly"> On sale only</label>
+      <button class="link" id="resetFilters" type="button">Reset filters</button>
+    </div>
+    <div class="grid" id="grid" aria-live="polite"></div>
+    <p class="empty" id="empty" hidden>No products match your filters. <button class="link" id="emptyReset">Clear filters</button></p>
+  </section>
+
+  <section class="section wrap" id="recentWrap" hidden>
+    <div class="section-head"><h2>Recently viewed</h2><p>Pick up where you left off.</p></div>
+    <div class="grid" id="recentGrid"></div>
+  </section>
+
+  <section class="section wrap" id="lookbook">
+    <div class="section-head"><h2>The pin-up board</h2><p>Photos from our winter shoot. Tap one.</p></div>
+    <div class="board">
+      <figure class="polaroid"><span class="tape"></span><img src="img/look-shopping.jpg" alt="Woman in a burgundy coat carrying shopping bags" loading="lazy"><figcaption>layer up</figcaption></figure>
+      <figure class="polaroid"><span class="tape"></span><img src="img/look-red.jpg" alt="Model in a red tee and black oversized jacket" loading="lazy"><figcaption>pop of red</figcaption></figure>
+      <figure class="polaroid"><span class="tape"></span><img src="img/tees-folded.jpg" alt="Folded tees in six colours" loading="lazy"><figcaption>every colour</figcaption></figure>
+      <figure class="polaroid"><span class="tape"></span><img src="img/sweatshirt-orange.jpg" alt="Woman in an orange sweatshirt" loading="lazy"><figcaption>easy knit days</figcaption></figure>
+      <figure class="polaroid"><span class="tape"></span><img src="img/knits.jpg" alt="Rail of knitwear" loading="lazy"><figcaption>the knit edit</figcaption></figure>
+      <figure class="polaroid"><span class="tape"></span><img src="img/store.jpg" alt="Inside a clothing store" loading="lazy"><figcaption>our shop floor</figcaption></figure>
+    </div>
+  </section>
+
+  <section class="section wrap" id="build">
+    <div class="section-head"><h2>Build your look</h2><p>Mix a top, a layer and a bottom. We’ll add it all in one tap.</p></div>
+    <div class="builder">
+      <div class="slot" data-slot="Tops"><span class="slot-label">Top</span><div class="slot-img"></div><div class="slot-meta"></div><div class="slot-ctl"><button data-dir="-1" aria-label="Previous top">←</button><button data-dir="1" aria-label="Next top">→</button></div></div>
+      <div class="plus" aria-hidden="true">+</div>
+      <div class="slot" data-slot="Outerwear"><span class="slot-label">Layer</span><div class="slot-img"></div><div class="slot-meta"></div><div class="slot-ctl"><button data-dir="-1" aria-label="Previous layer">←</button><button data-dir="1" aria-label="Next layer">→</button></div></div>
+      <div class="plus" aria-hidden="true">+</div>
+      <div class="slot" data-slot="Bottoms"><span class="slot-label">Bottom</span><div class="slot-img"></div><div class="slot-meta"></div><div class="slot-ctl"><button data-dir="-1" aria-label="Previous bottom">←</button><button data-dir="1" aria-label="Next bottom">→</button></div></div>
+      <aside class="look-total">
+        <p class="eyebrow">Your look</p>
+        <b id="lookTotal">$0</b>
+        <label>Size <select id="lookSize"><option>XS</option><option>S</option><option selected>M</option><option>L</option><option>XL</option></select></label>
+        <button class="btn btn-primary" id="lookAdd">Add look to cart</button>
+        <button class="link" id="lookShuffle" type="button">Surprise me ↻</button>
+      </aside>
+    </div>
+  </section>
+
+  <section class="section wrap">
+    <div class="section-head"><h2>Notes from customers</h2><p>Sample notes for this demo store.</p></div>
+    <div class="postcards">
+      <blockquote class="postcard fadein"><span class="stamp">TC</span><p>The hoodie is the softest thing I own. I’ve basically lived in it all winter.</p><cite>Maya R.</cite></blockquote>
+      <blockquote class="postcard fadein"><span class="stamp">TC</span><p>Fits perfectly, arrived in two days, and returns were painless. Easy decision.</p><cite>Jordan T.</cite></blockquote>
+      <blockquote class="postcard fadein"><span class="stamp">TC</span><p>Real quality for the price. The overcoat gets compliments every single time.</p><cite>Priya S.</cite></blockquote>
+    </div>
+  </section>
+
+  <section class="perks">
+    <div class="wrap perks-grid">
+      <div><h3>Free shipping</h3><p>On every order over $75, delivered in 2–4 days.</p></div>
+      <div><h3>Easy returns</h3><p>Not right? Send it back within 30 days, on us.</p></div>
+      <div><h3>Made responsibly</h3><p>Organic and recycled fabrics, fair-wage partner factories.</p></div>
+      <div><h3>Real support</h3><p>Talk to a human, 7 days a week.</p></div>
+    </div>
+  </section>
+
+  <section class="section wrap about" id="about">
+    <div class="about-art"><img src="img/store.jpg" alt="Inside a Thread &amp; Co. style clothing store" loading="lazy"></div>
+    <div>
+      <p class="eyebrow">Our story</p>
+      <h2>Less, but better.</h2>
+      <p>We started Thread &amp; Co. with one rule: make clothes we'd actually want to wear every day. No trend chasing, no inflated prices — just good fabric, careful fit and designs that last.</p>
+      <p>Every piece is tested for a full year before it reaches the shop, and we'll repair anything you bring back.</p>
+    </div>
+  </section>
+
+  <section class="section wrap faq" id="faq">
+    <div class="section-head"><h2>Questions, answered</h2></div>
+    <details><summary>How long does shipping take?</summary><p>Orders ship within 24 hours and arrive in 2–4 business days. Shipping is free over $75, otherwise $6.95.</p></details>
+    <details><summary>What is your returns policy?</summary><p>Return anything within 30 days, unworn, for a full refund. Return shipping is on us.</p></details>
+    <details><summary>How do I find my size?</summary><p>Use the size guide in any product's quick view. Between sizes? Size up for a relaxed fit.</p></details>
+    <details><summary>Are your fabrics sustainable?</summary><p>Our basics use organic cotton and recycled fibres, made in partner factories that pay fair wages.</p></details>
+  </section>
+
+  <section class="newsletter" style="--bg-img:url(img/knits.jpg)">
+    <div class="wrap">
+      <h2>Get 10% off your first order</h2>
+      <p>Join the list for early access to new drops.</p>
+      <form id="newsForm" class="news-form" novalidate>
+        <input type="email" id="newsEmail" placeholder="you@example.com" aria-label="Email address" required>
+        <button class="btn btn-light" type="submit">Subscribe</button>
+      </form>
+      <p class="news-msg" id="newsMsg" role="status"></p>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="wrap footer-grid">
+    <div>
+      <a href="#top" class="logo">Thread<span>&amp;</span>Co.</a>
+      <p>Modern everyday clothing.</p>
+    </div>
+    <div><h4>Shop</h4><a href="#shop">All products</a><a href="#featured">Bestsellers</a><a href="#shop">New in</a></div>
+    <div><h4>Help</h4><a href="#">Shipping</a><a href="#">Returns</a><a href="#">Size guide</a><a href="#">Contact</a></div>
+    <div><h4>Follow</h4><a href="#">Instagram</a><a href="#">TikTok</a><a href="#">Pinterest</a></div>
+    <div><h4>Company</h4><a href="#about">Our story</a><a href="#">Careers</a><a href="#">Sustainability</a></div>
+  </div>
+  <div class="wrap footer-bottom">© 2026 Thread &amp; Co. All rights reserved. · Photography via <a href="https://unsplash.com" target="_blank" rel="noopener">Unsplash</a></div>
+</footer>
+
+<button class="to-top" id="toTop" aria-label="Back to top" hidden>↑</button>
+
+<!-- Overlay -->
+<div class="overlay" id="overlay" hidden></div>
+
+<!-- Cart drawer -->
+<aside class="drawer" id="cartDrawer" aria-label="Shopping cart" aria-hidden="true">
+  <div class="drawer-head">
+    <h3>Your cart</h3>
+    <button class="icon-btn" data-close aria-label="Close cart">✕</button>
+  </div>
+  <div class="free-ship">
+    <p id="shipMsg"></p>
+    <div class="bar"><div id="shipBar"></div></div>
+  </div>
+  <div class="drawer-body" id="cartItems"></div>
+  <div class="drawer-foot">
+    <div class="row"><span>Subtotal</span><strong id="subtotal">$0.00</strong></div>
+    <form class="promo-row" id="promoForm">
+      <input id="promoInput" placeholder="Promo code" aria-label="Promo code" autocomplete="off">
+      <button class="btn btn-ghost" type="submit">Apply</button>
+    </form>
+    <p class="promo-msg" id="promoMsg" role="status"></p>
+    <div class="row discount" id="discountRow" hidden><span>Discount (<span id="discCode"></span>)</span><span id="discount"></span></div>
+    <div class="row muted"><span>Shipping</span><span id="shipping">—</span></div>
+    <div class="row total"><span>Total</span><strong id="total">$0.00</strong></div>
+    <button class="btn btn-primary btn-block" id="checkoutBtn">Checkout</button>
+  </div>
+</aside>
+
+<!-- Wishlist drawer -->
+<aside class="drawer" id="wishDrawer" aria-label="Wishlist" aria-hidden="true">
+  <div class="drawer-head">
+    <h3>Wishlist</h3>
+    <button class="icon-btn" data-close aria-label="Close wishlist">✕</button>
+  </div>
+  <div class="drawer-body" id="wishItems"></div>
+</aside>
+
+<!-- Quick view modal -->
+<div class="modal" id="modal" role="dialog" aria-modal="true" aria-labelledby="mTitle" hidden>
+  <div class="modal-box">
+    <button class="icon-btn modal-x" data-close aria-label="Close">✕</button>
+    <div class="modal-art" id="mArt"></div>
+    <div class="modal-info">
+      <p class="eyebrow" id="mCat"></p>
+      <h3 id="mTitle"></h3>
+      <div class="rating" id="mRating"></div>
+      <p class="price" id="mPrice"></p>
+      <p id="mDesc" class="desc"></p>
+      <div class="field"><span>Colour: <b id="mColorName"></b></span><div class="swatches" id="mColors"></div></div>
+      <div class="field"><span>Size</span><div class="sizes" id="mSizes"></div></div>
+      <button class="link" id="sizeGuideBtn" type="button">Size guide</button>
+      <p class="error" id="mError" role="alert"></p>
+      <button class="btn btn-primary btn-block" id="mAdd">Add to cart</button>
+      <div class="related" id="mRelated"></div>
+      <div class="reviews" id="mReviews"></div>
+    </div>
+  </div>
+</div>
+
+<!-- Size guide -->
+<div class="modal" id="sizeModal" role="dialog" aria-modal="true" aria-label="Size guide" hidden>
+  <div class="modal-box small">
+    <button class="icon-btn modal-x" data-close aria-label="Close">✕</button>
+    <div class="pad">
+      <h3>Size guide</h3>
+      <p class="desc">Body measurements in inches.</p>
+      <table class="sizes-table">
+        <thead><tr><th>Size</th><th>Chest</th><th>Waist</th><th>Hips</th></tr></thead>
+        <tbody>
+          <tr><td>XS</td><td>32–34</td><td>26–28</td><td>35–37</td></tr>
+          <tr><td>S</td><td>35–37</td><td>29–31</td><td>38–40</td></tr>
+          <tr><td>M</td><td>38–40</td><td>32–34</td><td>41–43</td></tr>
+          <tr><td>L</td><td>41–43</td><td>35–37</td><td>44–46</td></tr>
+          <tr><td>XL</td><td>44–46</td><td>38–40</td><td>47–49</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+
+<!-- Checkout -->
+<div class="modal" id="checkoutModal" role="dialog" aria-modal="true" aria-label="Checkout" hidden>
+  <div class="modal-box checkout">
+    <button class="icon-btn modal-x" data-close aria-label="Close">✕</button>
+    <form class="pad" id="checkoutForm" novalidate>
+      <h3>Checkout</h3>
+      <p class="desc">Demo store — no payment is taken and nothing is sent anywhere.</p>
+      <div class="form-grid">
+        <label>Full name<input name="name" required autocomplete="name"></label>
+        <label>Email<input name="email" type="email" required autocomplete="email"></label>
+        <label class="wide">Address<input name="address" required autocomplete="street-address"></label>
+        <label>City<input name="city" required autocomplete="address-level2"></label>
+        <label>Postcode<input name="zip" required autocomplete="postal-code"></label>
+      </div>
+      <div class="sum" id="checkoutSummary"></div>
+      <p class="error" id="coError" role="alert"></p>
+      <button class="btn btn-primary btn-block" type="submit">Place order</button>
+    </form>
+    <div class="pad done" id="orderDone" hidden>
+      <div class="tick">✓</div>
+      <h3>Thank you!</h3>
+      <p class="desc" id="orderMsg"></p>
+      <button class="btn btn-primary" data-close>Keep shopping</button>
+    </div>
+  </div>
+</div>
+
+<div class="toast" id="toast" role="status"></div>
+
+<script src="app.js"></script>
+</body>
+</html>
